@@ -865,56 +865,73 @@ h2, p {
   font-size: 13px;
   color: #969696; }
   .footer a:link, .footer a:visited {
-    color: #00a133; }
+    color: #c8c8c8;
+    text-decoration: none;
+    border-bottom: 1px solid #c8c8c8; }
 
 @media only screen and (max-width: 320px) {
   p {
     font-size: 24px;
     text-align: center; } }
 body {
-  background: #1e1e1e; }
+  background: #282828;
+  overflow: hidden; }
 
-img {
-  max-width: 70%; }
+header {
+  width: 100%;
+  margin: 0 auto; }
 
-.container {
-  position: relative; }
+.message-container {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto; }
+  @media only screen and (min-width: 767px) {
+    .message-container {
+      width: 340px;
+      text-align: left;
+      position: absolute;
+      right: 3em;
+      top: 10em; } }
+  @media only screen and (min-width: 1100px) {
+    .message-container {
+      top: 12em; } }
 
 .image-container {
-  overflow: hidden;
-  height: 300px;
   width: 100%;
-  position: fixed;
-  bottom: 0em;
-  left: -0.12em;
-  background: yellow; }
-  .image-container img {
-    max-width: 100%; }
-  @media only screen and (max-width: 479px) and (max-height: 803px) {
+  height: 300px;
+  text-align: center;
+  background: url("../../img/modo-sample-2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 400px;
+  bottom: 0em; }
+  @media only screen and (min-height: 720px) {
     .image-container {
-      position: static;
-      margin-left: -3em;
-      width: 100%; } }
+      position: absolute; } }
   @media only screen and (min-width: 767px) {
     .image-container {
       position: absolute;
-      height: auto;
-      top: 6em;
-      overflow: visible;
-      left: 1em; }
-      .image-container img {
-        max-width: 300px; } }
-  @media only screen and (min-width: 960px) {
-    .image-container img {
-      max-width: 400px; } }
+      top: 5em;
+      left: -2em;
+      width: 400px;
+      height: 900px; } }
+  @media only screen and (min-width: 1100px) {
+    .image-container {
+      width: 500px;
+      background-size: 500px;
+      height: 1200px; } }
 
-@media only screen and (max-width: 767px) {
-  .message-container {
-    text-align: center; } }
 @media only screen and (min-width: 767px) {
-  .message-container {
-    position: absolute;
-    right: 7em;
-    top: 10em; } }
+  .wrapper {
+    position: relative;
+    width: 100%; } }
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    width: 800px; } }
+@media only screen and (min-width: 1100px) {
+  .wrapper {
+    width: 940px; } }
+.wrapper {
+  margin: 0 auto; }
 
 /*# sourceMappingURL=site.css.map */
